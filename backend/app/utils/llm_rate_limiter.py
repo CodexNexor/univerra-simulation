@@ -1,3 +1,4 @@
+"""utils/llm_rate_limiter module."""
 import os
 import threading
 import time
