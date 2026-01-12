@@ -60,3 +60,4 @@ backend/uploads/
 # Docker data
 data/
 # Keep synced with .dockerignore
+# Keep synced with .dockerignore
