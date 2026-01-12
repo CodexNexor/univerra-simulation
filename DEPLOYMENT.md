@@ -53,7 +53,7 @@ After HTTPS works, change the record to Proxied in Cloudflare.
 Important:
 
 - Do not create other public DNS-only records pointing to the same VPS IP unless needed.
-- Do not expose `api.example.com` separately for this app. Use same-origin `/api` through Nginx.
+- Do not expose `api.example.com` directly — use same-origin `/api` through Nginx. Use same-origin `/api` through Nginx.
 - If your root domain is somewhere else, only the subdomain needs to point at this VPS.
 
 ## 2. Initial Ubuntu VPS Hardening
