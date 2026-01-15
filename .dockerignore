@@ -22,3 +22,4 @@ frontend/.vite
 
 backend/uploads
 # Keep image lean — only runtime deps
+# Keep image lean — only runtime deps
