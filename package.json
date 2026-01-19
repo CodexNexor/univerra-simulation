@@ -1,6 +1,6 @@
 {
   "name": "univerra-simulation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Univerra Simulation - AI multi-agent predictive simulation workspace",
   "scripts": {
     "setup": "npm install && cd frontend && npm install",
