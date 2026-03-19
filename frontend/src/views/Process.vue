@@ -481,7 +481,7 @@ const goHome = () => {
 }
 
 const goToNextStep = () => {
-  // TODO: Enter Environment Setup step
+  // Environment Setup step placeholder — implement per-agent env config
   alert('Environment setup feature under development...')
 }
 
