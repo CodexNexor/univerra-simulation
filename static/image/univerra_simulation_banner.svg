@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Univerra Simulation animated brand banner</title>
+  <desc id="desc">Animated dark banner showing a graph intelligence core, agent nodes, and the Univerra Simulation wordmark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="0.48" stop-color="#101827"/>
+      <stop offset="1" stop-color="#081112"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.45" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#f8e16c"/>
+    </linearGradient>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.55" stop-color="#c7f9d4"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .orbit { fill: none; stroke: rgba(125, 211, 252, .26); stroke-width: 2; }
+      .link { stroke: rgba(148, 163, 184, .42); stroke-width: 2; stroke-linecap: round; }
+      .node { fill: #d9f99d; filter: url(#glow); }
+      .pulse { transform-origin: 260px 180px; animation: pulse 3.8s ease-in-out infinite; }
+      .spin-slow { transform-origin: 260px 180px; animation: spin 18s linear infinite; }
+      .spin-fast { transform-origin: 260px 180px; animation: spin 11s linear infinite reverse; }
+      .float-a { animation: floatA 5s ease-in-out infinite; }
+      .float-b { animation: floatB 6s ease-in-out infinite; }
+      .dash { stroke-dasharray: 8 12; animation: dash 6s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%,100% { opacity: .58; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
+      @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(12px); } }
+      @keyframes dash { to { stroke-dashoffset: -120; } }
+    </style>
+  </defs>
+
+  <rect width="1280" height="360" rx="34" fill="url(#bg)"/>
+  <rect x="2" y="2" width="1276" height="356" rx="32" fill="none" stroke="rgba(255,255,255,.12)"/>
+
+  <g opacity=".48">
+    <path d="M0 286 C180 210 270 330 455 255 S790 200 960 270 1150 285 1280 214" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M0 78 C170 120 310 42 455 105 S750 176 930 92 1120 74 1280 136" fill="none" stroke="#86efac" stroke-width="2"/>
+  </g>
+
+  <g class="spin-slow">
+    <ellipse class="orbit dash" cx="260" cy="180" rx="142" ry="58"/>
+    <ellipse class="orbit" cx="260" cy="180" rx="92" ry="142" transform="rotate(54 260 180)"/>
+  </g>
+  <g class="spin-fast">
+    <ellipse class="orbit dash" cx="260" cy="180" rx="126" ry="44" transform="rotate(-28 260 180)"/>
+  </g>
+
+  <g class="pulse">
+    <circle cx="260" cy="180" r="68" fill="rgba(125,211,252,.12)"/>
+    <circle cx="260" cy="180" r="46" fill="url(#core)" filter="url(#glow)"/>
+    <circle cx="260" cy="180" r="14" fill="#031216"/>
+  </g>
+
+  <g class="float-a">
+    <line class="link" x1="260" y1="180" x2="130" y2="94"/>
+    <line class="link" x1="260" y1="180" x2="126" y2="258"/>
+    <circle class="node" cx="130" cy="94" r="9"/>
+    <circle class="node" cx="126" cy="258" r="8"/>
+  </g>
+  <g class="float-b">
+    <line class="link" x1="260" y1="180" x2="404" y2="100"/>
+    <line class="link" x1="260" y1="180" x2="410" y2="262"/>
+    <circle class="node" cx="404" cy="100" r="8"/>
+    <circle class="node" cx="410" cy="262" r="10"/>
+  </g>
+  <circle class="node" cx="210" cy="54" r="5"/>
+  <circle class="node" cx="334" cy="304" r="5"/>
+
+  <g transform="translate(520 94)">
+    <text x="0" y="0" fill="rgba(148,163,184,.9)" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="5">AGENTIC FORECASTING ENGINE</text>
+    <text x="0" y="86" fill="url(#word)" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="800">Univerra</text>
+    <text x="0" y="146" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="650">Simulation</text>
+    <text x="2" y="203" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="19">Graph memory. Synthetic agents. Scenario reports.</text>
+  </g>
+
+  <g transform="translate(1025 250)">
+    <rect width="170" height="44" rx="22" fill="rgba(15,23,42,.74)" stroke="rgba(255,255,255,.16)"/>
+    <circle cx="28" cy="22" r="6" fill="#4ade80">
+      <animate attributeName="opacity" values=".35;1;.35" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48" y="28" fill="#d9f99d" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">LIVE MODEL</text>
+  </g>
+</svg>

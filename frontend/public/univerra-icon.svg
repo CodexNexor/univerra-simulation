@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Univerra icon">
+  <defs>
+    <linearGradient id="g" x1="20" y1="12" x2="110" y2="116">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset=".48" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#f8e16c"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#05070d"/>
+  <circle cx="64" cy="64" r="42" fill="none" stroke="url(#g)" stroke-width="10"/>
+  <circle cx="64" cy="64" r="16" fill="url(#g)"/>
+  <circle cx="28" cy="34" r="7" fill="#7dd3fc"/>
+  <circle cx="98" cy="38" r="7" fill="#d9f99d"/>
+  <circle cx="104" cy="94" r="7" fill="#f8e16c"/>
+  <path d="M28 34 L64 64 L98 38 M64 64 L104 94" fill="none" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+</svg>
