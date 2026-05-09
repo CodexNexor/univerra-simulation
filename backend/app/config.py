@@ -1,7 +1,4 @@
-"""
-Configuration Management
-Loads configuration from the .env file in the project root directory
-"""
+"""Configuration Management — loads from .env in project root."""
 
 import os
 from dotenv import load_dotenv
